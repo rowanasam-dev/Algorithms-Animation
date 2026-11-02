@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Algorithms – Animation</title>
+  <link rel="stylesheet" href="algorithm.css">
+</head>
+<body>
+  <div class="w">
+    <h1>Algorithms – Animation</h1>
+
+    <div class="card">
+      <div class="ctl">
+        <select id="alg"></select>
+        <label id="kl">Key <input type="number" id="key"></label>
+        <button id="rnd">New array</button>
+        <button id="rst">Reset</button>
+        <button id="bk">◀ Back</button>
+        <button id="pl" class="p">▶ Play</button>
+        <button id="nx">Step ▶</button>
+        <label>Speed <input type="range" id="sp" min="1" max="10" value="5"></label>
+      </div>
+    </div>
+    <div class="card">
+      <div class="arr" id="arr"></div>
+      <div id="exs"></div>
+      <div class="st" id="st"></div>
+      <div class="sts">
+        Comparisons: <b id="cm">0</b> · Swaps: <b id="sw">0</b> · Step: <b id="sn">0</b>
+      </div>
+      <div class="lg">
+        <span><i style="background:var(--cmp)"></i>Comparing</span>
+        <span><i style="background:var(--swap)"></i>Swap</span>
+        <span><i style="background:var(--piv)"></i>Pivot / min / max / root</span>
+        <span><i style="background:var(--part)"></i>Sorted part</span>
+        <span><i style="background:var(--ok)"></i>Final / found</span>
+        <span><i style="background:var(--dim)"></i>Out of range</span>
+      </div>
+    </div>
+    <div class="card"><pre id="code"></pre></div>
+  </div>
+
+  <script src="algorithm.js"></script>
+</body>
+</html>
